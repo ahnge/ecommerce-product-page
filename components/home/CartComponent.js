@@ -15,7 +15,7 @@ const CartComponent = () => {
   };
 
   return (
-    <div className=" w-full bg-white rounded-lg absolute z-10 max-w-[360px] top-20 right-0 drop-shadow-2xl">
+    <div className=" w-full bg-white rounded-lg absolute min-w-[360px] top-20 right-0 drop-shadow-2xl">
       <h3 className=" font-semibold text-xl py-5 px-6 border-b-[1px]">Cart</h3>
       <div>
         {amountInCart === 0 ? (

@@ -12,6 +12,7 @@ const Nav = () => {
   // redux states
   const cartIsOpen = useSelector((state) => state.cart.isOpen);
   const amtInCart = useSelector((state) => state.cart.amountInCart);
+  const menuIsOpen = useSelector((state) => state.menu.isOpen);
   const dispatch = useDispatch();
 
   // functions for dispatching redux states
@@ -24,7 +25,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className=" flex w-11/12 max-w-6xl mx-auto py-5 md:py-0 justify-between md:border-b border-tg/20 relative">
+    <nav className=" flex w-11/12 max-w-6xl mx-auto py-5 md:py-0 justify-between md:border-b border-tg/20">
       <div className="flex space-x-3 md:space-x-0 md:pt-10">
         <div onClick={handleMenuOpenClose} className="md:hidden">
           <Hamburger />
@@ -33,7 +34,7 @@ const Nav = () => {
         <DesktopNavItems />
       </div>
 
-      <div className="flex space-x-3 md:space-x-0 md:pt-10">
+      <div className="flex space-x-3 md:space-x-0 md:pt-10 relative">
         <div
           className="md:mr-7 cursor-pointer relative"
           onClick={handleCartOpenClose}
@@ -48,9 +49,15 @@ const Nav = () => {
         <div className=" w-6 h-6 md:w-12 md:h-12 md:-mt-4 cursor-pointer border-transparent transition border-2 rounded-full hover:border-orange ">
           <Image src={avatar} alt="avatar of user" />
         </div>
+        {cartIsOpen && <CartComponent />}
       </div>
 
-      {cartIsOpen && <CartComponent />}
+      {menuIsOpen && (
+        <div
+          className=" absolute inset-0 bg-black/80 z-20"
+          onClick={handleMenuOpenClose}
+        ></div>
+      )}
 
       <MobileNavItems />
     </nav>
