@@ -12,7 +12,7 @@ const Texts = () => {
       </h1>
       <p className=" text-tg text-base mt-3">
         These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll wistand everything the
+        Featuring a durable rubber outer sole, they will wistand everything the
         weather can offer.
       </p>
       <Pricing />
