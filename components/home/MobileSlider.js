@@ -18,16 +18,16 @@ const MobileSlider = () => {
       modules={[Navigation]}
     >
       <SwiperSlide>
-        <Image src={productImgOne} />
+        <Image src={productImgOne} alt="product image" />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={productImgTwo} />
+        <Image src={productImgTwo} alt="product image" />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={productImgThree} />
+        <Image src={productImgThree} alt="product image" />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={productImgFour} />
+        <Image src={productImgFour} alt="product image" />
       </SwiperSlide>
     </Swiper>
   );

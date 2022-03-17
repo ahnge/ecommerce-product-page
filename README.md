@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/product-page-using-reduxtoolkit-and-nextjs-RShIDcHBb)
+- Live Site URL: [live site URL here](https://ecommerce-product-page-virid.vercel.app/)
 
 ## My process
 
@@ -46,6 +46,7 @@ Users should be able to:
 ### What I learned
 
 I learn Redux for state management. So, do I like redux? I would say not bad. Do I wanna work with redux in the future? It depends on the kind of the project that I am gonna do. I might use plain context API for small projects. But definitely redux for larger projects.
+I also learn how to use markdown in this project.
 
 ### Useful resources
 

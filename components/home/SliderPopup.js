@@ -26,7 +26,11 @@ const SliderPopup = () => {
         <div className="text-white text-right font-bold ml-auto mr-5 mb-5 cursor-pointer w-fit">
           X
         </div>
-        <Image src={imgValue} className="rounded-xl"></Image>
+        <Image
+          src={imgValue}
+          className="rounded-xl"
+          alt="product image"
+        ></Image>
         <div className="flex gap-5 mt-5 px-5">
           {items.map((item, index) => {
             return (
@@ -39,7 +43,7 @@ const SliderPopup = () => {
                 }`}
                 onClick={() => handleClick(index)}
               >
-                <Image src={item.src} layout="responsive" />
+                <Image src={item.src} layout="responsive" alt="thumbnail" />
               </div>
             );
           })}

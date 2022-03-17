@@ -23,6 +23,7 @@ const DesktopSlider = () => {
           src={imgValue}
           className="rounded-xl cursor-pointer"
           onClick={handlePopup}
+          alt="product image"
         ></Image>
         <div className="flex gap-5 mt-5">
           {items.map((item, index) => {
@@ -36,7 +37,7 @@ const DesktopSlider = () => {
                 }`}
                 onClick={() => handleClick(index)}
               >
-                <Image src={item.src} layout="responsive" />
+                <Image src={item.src} layout="responsive" alt="thumbnail" />
               </div>
             );
           })}
