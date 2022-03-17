@@ -13,7 +13,7 @@ const ProductPage = () => {
       <MobileSlider />
       <DesktopSlider />
       <Texts />
-      {popUpIsOpen && <div className="fixed bg-black/80 inset-0"></div>}
+
       {popUpIsOpen && <SliderPopup />}
     </div>
   );

@@ -17,7 +17,7 @@ const SliderPopup = () => {
   };
 
   return (
-    <div className=" w-full h-screen flex justify-center items-center fixed inset-0">
+    <div className=" w-full h-screen flex justify-center items-center fixed inset-0 bg-black/80 z-10">
       <div
         className="absolute inset-0 cursor-pointer"
         onClick={handlePopup}

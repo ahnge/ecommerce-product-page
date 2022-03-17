@@ -20,12 +20,12 @@ const Btns = () => {
 
   return (
     <div className="mt-6 pb-20 md:flex md:gap-2 lg:gap-4">
-      <div className="flex justify-between bg-[#F7F8FD] items-center py-3 px-5 rounded-lg md:flex-1">
-        <p className=" cursor-pointer" onClick={handleDecrement}>
+      <div className="flex justify-between bg-[#F7F8FD] items-center rounded-lg md:flex-1">
+        <p className=" cursor-pointer p-5" onClick={handleDecrement}>
           <Minus />
         </p>
         <p className="text-base font-bold">{amtToAdd}</p>
-        <p className=" cursor-pointer" onClick={handleIncrement}>
+        <p className=" cursor-pointer p-5" onClick={handleIncrement}>
           <Plus />
         </p>
       </div>
