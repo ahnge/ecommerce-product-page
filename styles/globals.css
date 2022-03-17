@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next {
+  @apply bg-white px-6 py-6 rounded-full hidden bg-auto bg-icon-next after:hidden bg-no-repeat bg-center;
+}
+
+.swiper-button-prev {
+  @apply bg-white px-6 py-6 rounded-full hidden bg-auto bg-icon-prev after:hidden bg-no-repeat bg-center;
+}
