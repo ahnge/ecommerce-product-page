@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Ecommerce Product Page</title>
         <meta
           name="description"
-          content="this is a challenge from frontendmentor website completed by nayzaw."
+          content="this is a challenge from frontendmentor website."
         />
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
